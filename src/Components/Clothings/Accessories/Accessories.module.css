@@ -1,0 +1,155 @@
+.parent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.container .card {
+  width: 250px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #d1c4c475;
+  cursor: pointer;
+  overflow: hidden !important;
+}
+
+.card .img {
+  width: 100%;
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+/* .link {
+    border: 3px solid gold !important;
+    width: 100%;
+    height: 100%;
+  } */
+.card .img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+}
+/* Here for box img */
+.card .boximg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border: none !important;
+}
+.card .boximg img {
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+}
+/* End for box img */
+.card .paragraph {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px 3px;
+  gap: 5px;
+}
+.card .paragraph .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.card .paragraph .sallery {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.sallery h4:nth-child(1) {
+  color: #24242471 !important;
+  font-style: oblique;
+}
+.card .paragraph h3 {
+  font-size: 14px !important;
+  font-family: sans-serif;
+  font-style: normal !important;
+  font-weight: 200 !important;
+  color: rgba(0, 0, 0, 0.637) !important;
+}
+.card .paragraph p {
+  font-size: 12px !important;
+  color: #24242483 !important;
+  font-weight: 500;
+}
+.card .paragraph h4 {
+  font-size: 17px !important;
+  color: #242424ea;
+  font-family: sans-serif;
+}
+.card .paragraph button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #24242467;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+}
+
+/* Here for anmation Hover */
+.card .paragraph button:hover {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #f6514f;
+}
+
+.card:hover .inside {
+  opacity: 1;
+  transition: 0.7s;
+  transform: scale(1.2);
+}
+
+.card:hover .outside {
+  opacity: 0;
+  /* transform: scale(1.3); */
+  transition: 0.1s;
+}
+
+
+/* Here for media Query */
+@media (max-width: 1024px) {
+  .parent .card {
+    width: 280px;
+  }
+  .container {
+    justify-content: center;
+  }
+}
+@media (max-width: 425px) {
+  .parent .card {
+    width: 100%;
+  }
+  .parent img {
+    object-fit: cover;
+  }
+}
+/* End for media Query */

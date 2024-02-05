@@ -1,0 +1,118 @@
+.parent {
+  width: 100%;
+  min-height: 43vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly !important;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.card {
+  width: 100%;
+  height: auto;
+  color: #242424 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card h3 {
+  color: #242424 !important;
+}
+.card .src {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card .src button {
+  color: #f6514f;
+  background-color: transparent;
+  font-size: 18px;
+}
+.src p {
+  color: #66646480 !important;
+  font-weight: 600 !important;
+}
+.src a {
+  color: #66646480;
+}
+/* Here for form */
+.container form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container .search {
+  width: 350px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.container form input {
+  border: 1px solid rgba(0, 0, 0, 0.226);
+  width: 80%;
+  height: 45px;
+  padding: 0 15px;
+  border-radius: 20px;
+  border-style: dashed 1px gold;
+  outline-color: #f6514f;
+  transition: 0.6s;
+}
+.container form label {
+  font-size: 30px;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.container input:hover {
+  border: none;
+  background-color: #f6514f;
+  color: #fff;
+  transition: 0.6s;
+}
+.container input:hover::placeholder {
+  color: #fff;
+}
+.container span {
+  background-color: #f6514f;
+  color: #fff;
+  padding: 0px 8px;
+  border-radius: 50%;
+}
+/* Here for Media Query */
+@media (max-width: 425px) {
+  .parent .card p {
+    font-size: 20px !important;
+  }
+  .parent .card h3 {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 320px) {
+  .parent .card p {
+    font-size: 16px !important;
+  }
+  .parent .card h3 {
+    font-size: 17px !important;
+  }
+  .parent .card a {
+    font-size: 12px !important;
+  }
+}
+/* End for Media Query */

@@ -1,0 +1,232 @@
+.parent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.container {
+  width: 90%;
+  min-height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* Here Style for Text Paragraph in frist Page */
+.container .text {
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid rgba(185, 174, 174, 0.363);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text .paragraph {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text .paragraph h5 {
+  width: 35%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(245, 97, 77, 0.116);
+  color: #f6524f86;
+  font-size: 16px;
+  font-weight: 600 !important;
+}
+.text .paragraph h5:nth-child(1) {
+  background-color: #294cff;
+  color: #fff;
+  border-radius: 15px;
+}
+/* End Style for Text Paragraph in frist Page */
+
+/* Here Style for Cards container */
+.container .cards {
+  width: 100%;
+  min-height: 100vh;
+  border: 2px solid #bebbbb96;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Here for Style to description */
+.cards .description {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+}
+.description .one {
+  width: 10%;
+  height: 100%;
+  border: 1px solid #bebbbb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description .two {
+  width: 200px;
+  height: 100%;
+  border: 1px solid #bebbbb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description .product {
+  width: 20%;
+  height: 100%;
+  border: 1px solid #bebbbb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description .price {
+  width: 15%;
+  height: 100%;
+  border: 1px solid #bebbbb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description .Quantity {
+  width: 24%;
+  height: 100%;
+  border: 1px solid #bebbbb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.description .Subtotal {
+  width: 15%;
+  height: 100%;
+  border: 1px solid #bebbbb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.description h5 {
+  font-size: 18px !important;
+}
+/* End for Style to description */
+
+/* Here for Style to Card */
+.cards .card {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.card .close {
+  width: 10%;
+  height: 100%;
+  border: 1px solid #bebbbb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .close button {
+  background-color: transparent;
+  color: #24242494;
+  font-size: 50px;
+  font-weight: 100;
+}
+.card .img {
+  width: 200px;
+  height: 100%;
+  border: 1px solid #bebbbb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .img img {
+  width: 100px;
+  height: 100px;
+}
+.card .src {
+  width: 20%;
+  height: 100%;
+  border: 1px solid #bebbbb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .src a {
+  color: #242424;
+  font-weight: 600;
+}
+.card .price {
+  width: 15%;
+  height: 100%;
+  border: 1px solid #bebbbb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .price p {
+  font-size: 15px !important;
+  color: #24242481 !important;
+}
+.card .increase {
+  width: 24%;
+  height: 100%;
+  border: 1px solid #bebbbb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.card .increase button {
+  background-color: transparent;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
+  background-color: #bdbaba3f;
+  border-radius: 50%;
+  color: #24242465;
+  transition: 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .increase p {
+  font-size: 20px !important;
+}
+.card .total {
+  width: 15%;
+  height: 100%;
+  border: 1px solid #bebbbb96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card .total p {
+  font-size: 15px !important;
+  color: #24242481 !important;
+}
+/* End for Style to Card */
+
+/* End Style for Cards container */
+
+/* Here for Style Hover */
+.card .increase button:hover {
+  color: #2424249c;
+  background-color: #bdbababd;
+  transition: 0.6s;
+}
+/* End for Style Hover */

@@ -1,13 +1,87 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: #f5614d !important;
+  color: #fff;
+}
+/* f6514f */
+.checkOut .active {
+  background-color: #f5614d;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 60px !important;
+  font-weight: 900 !important;
+  margin: 0 !important;
+  color: #fff !important;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
+h3 {
+  font-size: 35px !important;
+  font-weight: 700 !important;
+  font-style: oblique;
+  margin: 0 !important;
+  color: #fff !important;
+}
+h4 {
+  font-size: 30px !important;
+  font-weight: 500 !important;
+  /* letter-spacing: 10px; */
+  margin: 0 !important;
+}
+p {
+  font-size: 30px !important;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin: 0 !important;
+}
+a {
+  text-decoration: none !important;
+  border-radius: 25px;
+  transition: 0.6s;
+  margin: 0 !important;
+}
+img {
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+}
+
+.outlet .active {
+  background-color: #f6514f;
+  color: #fff;
+  padding: 8px 15px;
+}
+.src .active {
+  background-color: #f6514f;
+  padding: 8px 15px;
+  color: #fff !important;
+}
+/* Here for Media Query */
+@media (max-width: 1265px) {
+  .parent {
+    height: auto;
+    padding: 40px 0;
+  }
+  .container {
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+/* Here for smail CardCarousal
+.slick-prev:before,
+.slick-next:before {
+  font-size: 25px;
+  border-radius: 50%;
+  color: #dc3545;
+}
+.slick-prev {
+  left: -30px;
+} */

@@ -1,0 +1,300 @@
+.parent {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.parent .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent p {
+  color: #fff !important;
+}
+.container .card {
+  /*Hna sh8al el Card kolo*/
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.card .bg {
+  position: absolute;
+  inset: 0;
+  background-color: #24242448;
+}
+.card {
+  position: relative;
+}
+.card .paragraph {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card .paragraph .text {
+  width: 85%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.card .paragraph .text:nth-child(2) {
+  justify-content: flex-start !important;
+  align-items: flex-start;
+  border: 3px solid gold;
+}
+.paragraph .text .location {
+  width: 450px;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.location a {
+  padding: 15px 30px;
+  background-color: #f6514f;
+  color: #fff;
+}
+.location a:nth-child(1) {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 15px 35px;
+  border-radius: 25px;
+}
+.location .tag {
+  font-size: 25px;
+  transform: translateX(40%);
+}
+
+.location a:hover {
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+.location a:nth-child(2):hover {
+  background-color: #2f2f2f;
+}
+
+/* Here for Media Query */
+@media (max-width: 768px) {
+  .parent {
+    height: auto;
+  }
+  .parent .text {
+    gap: 5px;
+  }
+  .parent h1 {
+    font-size: 40px !important;
+  }
+  .parent h3 {
+    font-size: 28px !important;
+  }
+  .parent p {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 425px) {
+  .parent {
+    height: auto;
+  }
+  .parent .text {
+    gap: 4px;
+  }
+  .parent h1 {
+    font-size: 25px !important;
+  }
+  .parent h3 {
+    font-size: 25px !important;
+  }
+  .parent p {
+    font-size: 20px !important;
+  }
+  .parent .location {
+    width: auto !important;
+  }
+  .location a {
+    padding: 10px 20px;
+    background-color: #f6514f;
+    color: #fff;
+    font-size: 14px;
+  }
+  .location a:nth-child(1) {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+  }
+  .location a:hover {
+    letter-spacing: 1px;
+    transition: 0.6s;
+  }
+  .location a:nth-child(2):hover {
+    background-color: #2f2f2f;
+  }
+}
+@media (max-width: 375px) {
+  .location a {
+    padding: 10px 15px;
+    background-color: #f6514f;
+    color: #fff;
+    font-size: 14px;
+  }
+  .location a:nth-child(1) {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+  .location a:hover {
+    letter-spacing: 0.1px;
+    transition: 0.6s;
+  }
+  .location a:nth-child(2):hover {
+    background-color: #2f2f2f;
+  }
+  .parent {
+    height: auto;
+  }
+  .parent h1 {
+    font-size: 25px !important;
+  }
+  .parent h3 {
+    font-size: 22px !important;
+  }
+  .parent p {
+    font-size: 20px !important;
+  }
+  .parent .text {
+    gap: 3px;
+  }
+}
+@media (max-width: 320px) {
+  .location a {
+    padding: 8px 15px;
+    background-color: #f6514f;
+    color: #fff;
+    font-size: 11px;
+  }
+  .location a:nth-child(1) {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 9px 15px;
+    border-radius: 25px;
+  }
+  .location a:hover {
+    letter-spacing: 0.1px;
+    transition: 0.6s;
+  }
+  .location a:nth-child(2):hover {
+    background-color: #2f2f2f;
+  }
+  .parent h1 {
+    font-size: 20px !important;
+  }
+  .parent h3 {
+    font-size: 20px !important;
+  }
+  .parent .text {
+    gap: 3px;
+  }
+}
+@media (max-width: 284px) {
+  .location a {
+    padding: 8px auto;
+    background-color: #f6514f;
+    color: #fff;
+    font-size: 11px;
+    font-size: 8px !important;
+  }
+  .location .tag {
+    font-size: 9px;
+  }
+  .location a:nth-child(1) {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 9px 10px;
+    border-radius: 25px;
+  }
+  .location a:hover {
+    letter-spacing: 0.1px;
+    transition: 0.6s;
+  }
+  .location a:nth-child(2):hover {
+    background-color: #2f2f2f;
+  }
+  .parent h1 {
+    font-size: 16px !important;
+  }
+  .parent p {
+    font-size: 14px !important;
+  }
+  .parent h3 {
+    font-size: 10px !important;
+  }
+  .parent .text {
+    gap: 3px;
+  }
+}
+@media (max-width: 226px) {
+  .location a {
+    padding: 8px auto;
+    background-color: #f6514f;
+    color: #fff;
+    font-size: 11px;
+    font-size: 6px !important;
+  }
+  .location .tag {
+    font-size: 7px;
+  }
+  .location a:nth-child(1) {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 9px 10px;
+    border-radius: 25px;
+  }
+  .location a:hover {
+    letter-spacing: 0.1px;
+    transition: 0.6s;
+  }
+  .location a:nth-child(2):hover {
+    background-color: #2f2f2f;
+  }
+  .parent h1 {
+    font-size: 14px !important;
+  }
+  .parent p {
+    font-size: 12px !important;
+  }
+  .parent h3 {
+    font-size: 9px !important;
+  }
+  .parent .text {
+    gap: 3px;
+  }
+}
+/* End for Media Query */

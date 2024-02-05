@@ -1,0 +1,109 @@
+.parent {
+  width: 100%;
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.container header {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1 !important;
+}
+.container header nav {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container nav ul {
+  display: flex !important;
+  flex-wrap: wrap;
+}
+.container header h3,
+p {
+  color: #242424 !important;
+}
+.container header p {
+  color: #24242471 !important;
+  font-weight: 300;
+}
+.container nav a {
+  background-color: transparent;
+  border: 1px solid #ccc9c998;
+  padding: 8px 15px;
+  color: #24242483;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Here Style for OutLet */
+.container .card {
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+}
+/* End Style for OutLet */
+
+/* Here for Media Query */
+@media (max-width: 768px) {
+  .container header nav {
+    width: auto !important;
+  }
+}
+@media (max-width: 425px) {
+  .parent h3 {
+    font-size: 28px !important;
+  }
+  .parent p {
+    font-size: 20px !important;
+  }
+  .container nav ul {
+    width: auto !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+  .parent li {
+    width: auto;
+  }
+}
+@media (max-width: 375px) {
+  .parent h3 {
+    font-size: 25px !important;
+  }
+  .parent p {
+    font-size: 18px !important;
+  }
+  .parent a {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 320px) {
+  .parent h3 {
+    font-size: 19px !important;
+  }
+  .parent p {
+    font-size: 14px !important;
+  }
+  .parent a {
+    font-size: 7px !important;
+  }
+}
+/* End for Media Query */

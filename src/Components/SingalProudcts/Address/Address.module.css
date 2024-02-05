@@ -1,0 +1,84 @@
+.parent {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.card {
+  width: 100%;
+  height: auto;
+  color: #242424 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card h3 {
+  color: #242424 !important;
+}
+.card .src {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card .src .arrow {
+  color: #f6514f;
+  background-color: transparent;
+  font-size: 18px;
+}
+.src p {
+  color: #66646480 !important;
+  font-weight: 600 !important;
+}
+.src a {
+  color: #66646480;
+}
+
+/* Here for Media Query */
+@media (max-width: 425px) {
+  .card h3 {
+    font-size: 23px !important;
+  }
+  .card p {
+    font-size: 13px !important;
+  }
+  .card a {
+    font-size: 13px !important;
+  }
+}
+@media (max-width: 375px) {
+  .card h3 {
+    font-size: 20px !important;
+  }
+  .card p {
+    font-size: 12px !important;
+  }
+  .card a {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 320px) {
+  .card h3 {
+    font-size: 15px !important;
+  }
+  .card p {
+    font-size: 9px !important;
+  }
+  .card a {
+    font-size: 10px !important;
+  }
+}
+/* Hna m7tag azbot el media query bta3t el accousry */
+/* End for Media Query */
